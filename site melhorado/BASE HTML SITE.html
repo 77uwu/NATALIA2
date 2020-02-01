@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Make Magia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+<body>
+
+
+  <nav>
+    <a class="logo" href=>Make Magia</a>
+    <!-- MENU -->
+    <ul class="menu">
+      <!-- LISTA -->
+      <li class="item-menu">Batons</li> <!-- ITEM DA LISTA -->
+      <li class="item-menu">Pincéis</li> <!-- ITEM DA LISTA -->
+      <li class="item-menu">Sombras</li> <!-- ITEM DA LISTA -->
+      <li class="item-menu">Maletas</li> <!-- ITEM DA LISTA -->
+    </ul>
+  </nav>
+
+  <!-- !PAGE CONTENT! -->
+  <div>
+
+    <!-- First Photo Grid-->
+    <div>
+      <div class="poema">
+        <div class="fundo">
+        </div>
+        <div class="gif"> 
+
+          <h3>A MULHER</h3>
+          <p>A Beleza da Mulher está<br>
+            No olhar em um sorriso,<br>
+            Em um simples gesto<br>
+            Ela é capaz de expressa<br>
+            A sua sensualidade com<br>
+            Naturalidade, a beleza<br>
+            Está dentro de cada uma<br>
+            E fora é só uma questão<br>
+            De gosto.</p>
+          <h4>Não existe mulher feia, existe mulher que não conhece os produtos Make Magia!</h4>
+        </div>
+      </div>
+
+      <div class="w3-content w3-display-container">
+          <img class="mySlides" src="bat2.jpg" style="width:100%; height:500px;">
+          <img class="mySlides" src="pincel2.jpg" style="width:100%; height:500px;">
+          <img class="mySlides" src="paleta.jpg" style="width:100%; height:500px;">
+          <img class="mySlides" src="maleta.jpg" style= "width:100%; height:500px;">
+        
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+      <div<form action="/action_page.php">
+        Nome:<br>
+        <input type="text" name="Nome">
+        <br>
+        E-mail ou telefone:<br>
+        <input type="text" name="Sobrenome">
+        <br><br>
+        <input type="submit" value="Enviar">
+        </form>
+
+
+
+
+        <!-- End page content -->
+    </div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+
+</html>
